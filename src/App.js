@@ -4,6 +4,7 @@ import './App.css';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from './pages/Home';
 import Sidebar from './components/Sidebar';
+import Indicadores from './pages/Indicadores';
 
 
 
@@ -30,7 +31,8 @@ function App() {
           }}
         >
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/Home" element={<Home />} />
+            <Route path="/Indicadores" element={<Indicadores />} />
 
           </Routes>
         </main>

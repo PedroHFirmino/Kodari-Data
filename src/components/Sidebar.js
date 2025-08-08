@@ -75,9 +75,10 @@ const Header = () => {
           </MenuItem>
           <MenuItem disabled style={{ ...styles.menuTitle, margin: '15px 0 5px 0' }}>Geral</MenuItem>
 
-          <MenuItem icon={<FaHome/>}>Home</MenuItem>
+          <MenuItem component={<NavLink to ='/Home'/>} icon={<FaHome/>}>Home</MenuItem>
+
           <SubMenu icon={<FaChartBar/>} label="Indicadores">
-            <MenuItem> Movidesk </MenuItem>
+            <MenuItem component={<NavLink to ="/Indicadores"/>}> Movidesk </MenuItem>
             <MenuItem> Em produção </MenuItem>
           </SubMenu>
           <MenuItem icon={<FaMapSigns/>}> Roadmap </MenuItem>
