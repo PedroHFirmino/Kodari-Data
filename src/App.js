@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Home from './pages/Home';
 import Sidebar from './components/Sidebar';
 import Indicadores from './pages/Indicadores';
+import MapaTatico from './pages/Mapatatico';
 
 
 
@@ -15,24 +16,24 @@ function App() {
     setIsCollapsed(!isCollapsed);
   }; 
 
-  const contentMarginLeft = isCollapsed ? '80px' : '270px';
   return (
     <Router>
       <div style={{ display: 'flex' }}>
         <Sidebar isCollapsed={isCollapsed} toggleCollapse={toggleCollapse} />
         <main 
           style={{ 
-            marginLeft: contentMarginLeft, 
-            width: `calc(100% - ${contentMarginLeft})`,
+            flexGrow: 1,
             transition: 'margin-left 0.3s ease-in-out',
-            padding: '24px',
+            padding: '0px',
             overflowY: 'auto',
             height: '100vh',
+            minWidth: '0px',
           }}
         >
           <Routes>
             <Route path="/Home" element={<Home />} />
             <Route path="/Indicadores" element={<Indicadores />} />
+            <Route path="/Mapatatico" element={<MapaTatico />} />
 
           </Routes>
         </main>

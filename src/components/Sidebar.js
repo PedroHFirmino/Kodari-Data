@@ -82,7 +82,7 @@ const Header = () => {
             <MenuItem> Em produção </MenuItem>
           </SubMenu>
           <MenuItem icon={<FaMapSigns/>}> Roadmap </MenuItem>
-          <MenuItem icon={<FaCrosshairs/>}> Mapa Tático </MenuItem>
+          <MenuItem component={<NavLink to ='/Mapatatico'/>} icon={<FaCrosshairs/>}> Mapa Tático </MenuItem>
 
           <MenuItem disabled style={{ ...styles.menuTitle, margin: '15px 0 5px 0' }}>Ajuda</MenuItem>
 
