@@ -5,10 +5,10 @@ const Home = () => {
         <div style={styles.mainContainer}> 
             <section style={styles.mainSection}>
                     <h1 style={styles.title}>
-                        <span style={styles.titleHighlight}>Sistema de Dados Integrado</span><br/>      
+                        <span style={styles.titleHighlight}>Sistema de Dados CSTI Integrado</span><br/>      
                     </h1>
                     <p style={styles.description}>
-                        Visualização de dados integrada para análise e insights.
+                        Visualização de dados CSTI para análise e insights.
                     </p>
             <div style={styles.description}>
                 
